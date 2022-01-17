@@ -49,7 +49,7 @@ exports.belvoToken = (req, res) => {
 
 exports.updateLink = (req, res) => {
 
-    const { link_id, environment } = req.body
+    const { environment, updateLink } = req.params
 
     if (environment === "development") {
         client = development
@@ -59,7 +59,7 @@ exports.updateLink = (req, res) => {
 
     client.connect()
         .then(function () {
-            client.widgetToken.create({ link: link_id })
+            client.widgetToken.create({ link: updateLink })
                 .then((response) => {
                     res.json(response);
                 })

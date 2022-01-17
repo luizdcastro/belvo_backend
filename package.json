@@ -9,6 +9,7 @@
   "author": "Luiz Castro",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.24.0",
     "belvo": "^0.21.0",
     "cors": "^2.8.5",
     "dotenv": "^11.0.0",

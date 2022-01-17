@@ -8,6 +8,6 @@ router.post('/transactions', belvoController.getTransactions)
 router.post('/balances', belvoController.getBalances)
 router.post('/owners', belvoController.getOwners)
 router.post('/delete', belvoController.deleteLink)
-router.post('/update-link', belvoController.updateLink)
+router.get('/update-link/:environmen/:updateLink', belvoController.updateLink)
 
 module.exports = router
